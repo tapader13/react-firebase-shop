@@ -1,0 +1,40 @@
+.section {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 72.5px;
+    background-color: aqua;
+}
+
+.header {
+    background: url(../assets/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.hero_text {
+    color: aliceblue;
+    background: rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrap_hero {
+    font-size: 1.3rem;
+}
+
+@media(max-width:500px) {
+    .wrap_hero {
+        font-size: 1rem;
+    }
+
+    .hero_text {
+        padding-inline: .3rem;
+        text-align: center;
+    }
+}

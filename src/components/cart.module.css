@@ -1,0 +1,136 @@
+.container {
+    margin-top: 100px;
+    margin-inline: 2rem;
+    display: flex;
+
+}
+
+.cart_box {
+    width: 100%;
+    display: flex;
+    padding-inline: .5rem;
+    align-items: center;
+    padding-block: 1rem;
+    justify-content: space-around;
+
+}
+
+.payement {
+    width: 26%;
+    margin: auto;
+    box-shadow: 0px 0px 68px 30px rgba(220, 26, 26, 0.12) inset,
+        0px 1px 2px 0px rgba(0, 0, 0, 0.24);
+    padding: 1rem;
+}
+
+.payement h3 {
+    border-bottom: 1px solid green;
+    padding-block: 5px;
+}
+
+.tlt_items,
+.tlt_price {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 5px;
+}
+
+.box {
+    width: 73%;
+    box-shadow: 0px 0px 68px 30px rgba(220, 26, 26, 0.12) inset,
+        0px 1px 2px 0px rgba(0, 0, 0, 0.24);
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.first h6 {
+    font-weight: 800;
+}
+
+.img {
+    height: 90px;
+    width: 90px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    align-items: center;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-evenly;
+    width: 22%;
+    gap: 10px;
+    align-items: center;
+}
+
+.amount h6 {
+    font-size: 1.4rem;
+
+}
+
+.amount i {
+    cursor: pointer;
+}
+
+.icon p {
+
+    color: orange;
+    font-size: 1.1rem;
+
+}
+
+.icon p i {
+    border: 2px solid orange;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:950px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .payement {
+        width: 100%;
+    }
+}
+
+@media(max-width:750px) {
+
+
+    .cart_box {
+        flex-direction: column;
+        border-bottom: 1px solid black;
+
+    }
+
+    .amount {
+        gap: 35px;
+    }
+
+    .icon,
+    .first,
+    .amount {
+        padding-top: 2rem;
+    }
+
+    .container {
+        margin-inline: 1rem;
+    }
+}
